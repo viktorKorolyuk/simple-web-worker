@@ -1,15 +1,27 @@
 html {
-	background-color: #7D2663;
+	background-color: #21608f;
 	font-family: sans-serif;
 }
 
-h1 {
-	margin: 0;
-	font-size: 15vw;
-	letter-spacing: -0.2rem;
+.background_text{
 	position: absolute;
 	top: 0;
 	z-index: -1;
+	margin: 0;
+}
+
+h1, h2{
+	margin:0;
+}
+
+h1 {
+	font-size: 15vw;
+	color: #ccc;
+}
+
+h2 {
+	font-size: 11vw;
+	color: #333;
 }
 
 p {
@@ -18,12 +30,18 @@ p {
 
 .controls {
 	padding: 4vw;
-	width: 75%;
 	margin: 10vw auto;
+	width: 75%;
+
+	border: 5px solid #333;
+	border-radius: 1em;
+
+	opacity: 0.1;
+
 	background-color: rgba(255,255,255,0.7);
-	border: 5px solid black;
-	opacity: 0.3;
-	transition: 1s all;
+	box-shadow: 3px 3px 5px #222;
+
+	transition: 0.8s ease-in-out;
 }
 
 .controls:hover, .controls:focus {
@@ -36,5 +54,9 @@ p {
 
 .controls div {
   padding-bottom: 1rem;
+}
+
+.controls input{
+	padding: 1vw;
 }
 
